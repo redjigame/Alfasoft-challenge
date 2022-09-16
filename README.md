@@ -4,5 +4,7 @@ Web Application to Manage Contacts
 Simple Web Application to manage contacts, You can create, edit and delete any contacts.
 
 Technolgies: C# RazorPages ASP .NET Core 6 
+<br/>
 DATABASE : Microsoft SQL Serveur
+<br/>
 Nuggets : SQL Client
