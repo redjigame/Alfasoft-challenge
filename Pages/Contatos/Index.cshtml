@@ -1,0 +1,36 @@
+﻿@page
+@model Alfasoft_Challenge.Pages.Clients.IndexModel
+@{
+}
+
+<br />
+<h2>Lista de contatos</h2>
+<a class="btn btn-primary" href='/Contatos/Create'>Novo Contato</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Contato</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listContacts)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.nome</td>
+                <td>@item.contact</td>
+                <td>@item.email</td>
+                <td>
+                    <a class="btn-primary" href="/Contatos/Edit?id=@item.id">Edit</a>
+                    <a class="btn-danger" href="/Contatos/Delete?id=@item.id">Delete</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>

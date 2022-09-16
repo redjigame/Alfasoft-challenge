@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div>
+       <label>Nome Usuário:</label>
+       <input type="text" name="username" value="" />
+
+        <label>Senha:</label>
+        <input type="password" name="senha" value="" />
+
+        <input type="submit" value="Enviar" />
+</div>
+    <h1 class="display-4">Lista de Contatos</h1>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Contato</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listContacts)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.nome</td>
+                <td>@item.contact</td>
+                <td>@item.email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+

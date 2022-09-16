@@ -1,0 +1,52 @@
+﻿@page
+@model Alfasoft_Challenge.Pages.Contatos.CreateModel
+@{
+}
+
+<br />
+<h2>Novo Contato</h2>
+@if(Model.errorMessage.Length > 0)
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>@Model.errorMessage</strong>
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+    </div>
+}
+<form method="post">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Nome</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="nome" value="@Model.contatoInfo.nome" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Contato</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="contact" value="@Model.contatoInfo.contact" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="email" value="@Model.contatoInfo.email" />
+        </div>
+    </div>
+
+    @if(Model.successMessage.Length > 0)
+    {
+        <div class='alert alert-success alert-dismissible fade show' role='alert'>
+            <strong>@Model.successMessage</strong>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div>
+            <button type="submit" class="btn-primary btn-primary>Submit">Submit</button>
+
+        </div>
+        <div>
+            <button class="btn-primary btn-outline-primary" href="/" role="button">Cancel</button>
+        </div>
+    </div>
+</form>
