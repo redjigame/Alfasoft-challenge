@@ -20,4 +20,5 @@ Simple Web Application to manage contacts, You can create, edit and delete any c
 <br/>
 Nuggets : SQL Client
 <br/>
-![Alfa](https://user-images.githubusercontent.com/48740296/190719055-d538ddaa-9434-4ae4-8498-ed6349ebb258.png)
+
+https://user-images.githubusercontent.com/48740296/190719055-d538ddaa-9434-4ae4-8498-ed6349ebb258.png
